@@ -54,7 +54,7 @@ func Validate(r io.ReadSeeker, refs []string, out *log.Logger) error {
 
 var validRefMediaTypes = []string{
 	v1.MediaTypeImageManifest,
-	v1.MediaTypeImageIndex,
+	v1.MediaTypeImageManifestList,
 }
 
 func validate(w walker, refs []string, out *log.Logger) error {
